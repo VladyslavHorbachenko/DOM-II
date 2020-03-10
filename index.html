@@ -16,7 +16,7 @@
   <![endif]-->
 </head>
 
-<body>
+<body onresize="resize()">
 
   <header class="main-navigation">
     <div class="container nav-container">
@@ -29,7 +29,7 @@
       </nav>
     </div>
   </header>
-     
+
   <div class="container home">
     <header class="intro">
       <img src="img/fun-bus.jpg" alt="bus in the sand">
@@ -51,7 +51,7 @@
           <img src="img/fun.jpg" class="img-fluid rounded" alt="Lets have fun!">
       </div>
       <div class="text-content">
-        <h2>Adventure Awaits</h2>
+        <h2 ondblclick="DbClickFunction()">Adventure Awaits</h2>
         <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
@@ -81,7 +81,10 @@
       </div>
     </section>
   </div><!-- container -->
-
+  <form id="form">
+    <input type="text" placeholder="text input" value="Select me!!" onselect="OnSelectFunction()">
+    <input type="password" placeholder="password">
+  </form>
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
